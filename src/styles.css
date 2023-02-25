@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Heroes Assemble";
+    src: url('./assets/fonts/heroes_assemble/heroesassembleboldital2.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: "Heroes Assemble 2";
+    src: url('./assets/fonts/heroes_assemble/heroesassembleacadital.ttf') format('truetype');
+}
