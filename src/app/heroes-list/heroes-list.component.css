@@ -1,0 +1,108 @@
+.row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #5d5e78, #78788e, #9492a4, #b0aebb, #cccbd2, #d5d5d9, #dfdee1, #e8e8e8, #e1e1e1, #d9d9d9, #d2d2d2, #cbcbcb);;
+    margin-bottom: 10vh;
+}
+
+.row-item {
+    flex: 1;
+    text-align: center;
+}
+
+.row-item-right {
+    text-align: right;
+}
+
+.row-item > img {
+    text-align: center;
+    margin-right: 0;
+    max-width: 48vw;
+}
+
+.title {
+    margin-left: 5vw;
+    font-family: "Heroes Assemble", Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 0.8;
+    font-size: 7.5em;
+    color: rgb(0, 0, 0);
+}
+
+.title > span {
+    font-size: 1.5em;
+}
+
+.hero-info > p {
+    margin: 2em;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-indent: 3em;
+}
+
+.hero-info > h2 {
+    cursor: pointer;
+    font-size: 4em;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Heroes Assemble 2", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.row-item > p {
+    margin-left: 5vw;
+    font-size: 1.25em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 41, 41);
+    line-height: 1.5;
+    position: relative;
+}
+
+.row-item > p:nth-child(2) {
+    margin-top: 5vh;
+}
+
+.arrow {
+    display: inline-block;
+    transform: rotate(0deg);
+    cursor: pointer;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.arrow span {
+    display: block;
+    width: 3vw;
+    height: 3vw;
+    border-bottom: 15px solid #78788e;
+    border-right: 15px solid #78788e;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}

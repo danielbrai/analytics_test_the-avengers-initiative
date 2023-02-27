@@ -1,0 +1,70 @@
+.row-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(6, 28, 42);
+    background: linear-gradient(121deg, rgba(6, 28, 42, 1) 0%, rgba(27, 119, 154, 1) 47%);
+}
+
+.row-item {
+    flex: 1;
+    text-align: center;
+    max-height: 100vh;
+}
+
+.wrap-image>img {
+    height: 85%;
+    width: 85%;
+}
+
+.title {
+    font-family: "Heroes Assemble", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3.5em;
+    color: rgb(120, 127, 133);
+}
+
+.title-highlight {
+    font-size: 3EM;
+}
+
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(120, 127, 133);
+}
+
+.access-button {
+    margin-top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(120, 127, 133);
+    border-radius: 30px;
+    border: 2px solid rgb(120, 127, 133);
+    padding: 1em;
+    width: auto;
+    overflow: visible;
+    background-color: transparent;
+    line-height: normal;
+}
+
+.access-button:hover {
+    background-color: rgb(120, 127, 133);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: #145874;
+    border-radius: 30px;
+    border: 2px solid #145874;
+    padding: 1em;
+    width: auto;
+    overflow: visible;
+}
+
+.cover {
+    margin: auto;
+    display:block;
+}

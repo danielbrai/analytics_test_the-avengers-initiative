@@ -1,0 +1,33 @@
+<div class="row-container">
+  <div class="row-item">
+
+    <h1 class="title"><span>Avengers</span>, assemble!</h1>
+
+    <p>
+      Uma equipe de indivíduos extraordinários, com habilidades especiais e a vontade de fazer o bem acima de tudo.
+    </p>
+
+    <p>
+      Conheça os heróis que juraram proteger o planeta e suas pessoas de ameaças domésticas e extraterrestre
+    </p>
+
+    <div class="arrow">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+  <div class="row-item row-item-right">
+    <img src="./../../assets/img/avengers-assemble.png" alt="Avengers, assemble!">
+  </div>
+</div>
+
+<div *ngFor="let hero of heroes">
+  <div class="hero-info">
+    <h2 routerLink="/heroes/{{hero.id}}" [style.color]="hero.mainColor">{{hero.name}}</h2>
+    <p>
+      {{hero.description}}
+    </p>
+  </div>
+</div>
