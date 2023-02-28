@@ -1,10 +1,14 @@
+.container {
+    height: 100vh;
+    background-image: linear-gradient(to right top, #5d5e78, #78788e, #9492a4, #b0aebb, #cccbd2, #d5d5d9, #dfdee1, #e8e8e8, #e1e1e1, #d9d9d9, #d2d2d2, #cbcbcb);
+}
+
 .row-container {
+    padding-top: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(to right top, #5d5e78, #78788e, #9492a4, #b0aebb, #cccbd2, #d5d5d9, #dfdee1, #e8e8e8, #e1e1e1, #d9d9d9, #d2d2d2, #cbcbcb);;
-    margin-bottom: 10vh;
+    margin-bottom: 25vh;
 }
 
 .row-item {
@@ -16,7 +20,7 @@
     text-align: right;
 }
 
-.row-item > img {
+.row-item>img {
     text-align: center;
     margin-right: 0;
     max-width: 48vw;
@@ -31,11 +35,11 @@
     color: rgb(0, 0, 0);
 }
 
-.title > span {
+.title>span {
     font-size: 1.5em;
 }
 
-.hero-info > p {
+.hero-info>p {
     margin: 2em;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +47,7 @@
     text-indent: 3em;
 }
 
-.hero-info > h2 {
+.hero-info>h2 {
     cursor: pointer;
     font-size: 4em;
     text-align: center;
@@ -52,7 +56,7 @@
     line-height: 1.5;
 }
 
-.row-item > p {
+.row-item>p {
     margin-left: 5vw;
     font-size: 1.25em;
     text-align: center;
@@ -62,7 +66,7 @@
     position: relative;
 }
 
-.row-item > p:nth-child(2) {
+.row-item>p:nth-child(2) {
     margin-top: 5vh;
 }
 
@@ -77,8 +81,8 @@
 
 .arrow span {
     display: block;
-    width: 3vw;
-    height: 3vw;
+    width: 1.75vw;
+    height: 1.75vw;
     border-bottom: 15px solid #78788e;
     border-right: 15px solid #78788e;
     transform: rotate(45deg);
@@ -98,11 +102,43 @@
         opacity: 0;
         transform: rotate(45deg) translate(-20px, -20px);
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+    .row-container {
+        margin-bottom: 30vh;
+    }
+
+}
+
+@media (min-width: 1900px) and (max-width: 2060px) {
+    .row-item>img {
+        text-align: center;
+        margin-right: 0;
+        max-width: 60vw;
+    }
+
+
+    .row-item>p {
+        margin-right: 2vw;
+        font-size: 1.5em;
+    }
+
+    .arrow {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .hero-info>p {
+        font-size: 1.5em;
     }
 }

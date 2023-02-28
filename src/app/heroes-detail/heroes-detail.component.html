@@ -1,9 +1,13 @@
-<div class="container wrap-reverse">
-  <h1 class="title row-item" [style.color]="hero.mainColor">{{hero.name}}</h1>
-  <div class="img-container">
-    <img class="hero-portrait" src="{{hero.imagePath}}" alt="{{hero.name}}">
-  </div>
-  <div class="row-item hero-info">
-    <p>{{hero.description}}</p>
+<div class="container">
+  <app-navbar></app-navbar>
+
+  <div class="row-container wrap-reverse">
+    <h1 class="title row-item" [style.color]="hero.mainColor">{{hero.name}}</h1>
+    <div class="img-container">
+      <img class="hero-portrait" src="{{hero.imagePath}}" alt="{{hero.name}}">
+    </div>
+    <div class="row-item hero-info">
+      <p>{{hero.description}}</p>
+    </div>
   </div>
 </div>

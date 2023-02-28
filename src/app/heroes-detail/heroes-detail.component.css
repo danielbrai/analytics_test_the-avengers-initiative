@@ -1,18 +1,22 @@
 .container {
-    padding-top: 10vh;
     height: 100vh;
     background-image: linear-gradient(to right top, #b7b7b7, #c2c2c2, #cdcdcd, #d8d8d8, #e3e3e3, #e7e7e7, #eaeaea, #eeeeee, #ebebeb, #e7e7e7, #e4e4e4, #e1e1e1);
+}
+
+.row-container {
+    padding-top: 8vh;
     display: flex !important;
     justify-content: center;
     align-items: center;
 }
 
 .img-container {
-    height: 60vh;
+    height: 50vh;
 }
 
 .img-container>img {
     display: block;
+    margin-top: 2vh;
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
@@ -30,7 +34,7 @@
 
 .row-item:not(:first-child) {
     flex: 1;
-    max-width: 40vw;
+    max-width: 30vw;
     margin: 2em;
 }
 
@@ -39,7 +43,8 @@
     font-family: "Heroes Assemble 2", Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 0.8;
-    font-size: 15em;
+    font-size: 8em;
+    font-weight: lighter;
 }
 
 .hero-info > p {
@@ -48,4 +53,26 @@
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     text-indent: 3em;
+}
+
+
+@media (min-width: 1600px) and (max-width: 1920px)
+{
+    .title {
+        margin: auto;
+        font-family: "Heroes Assemble 2", Arial, Helvetica, sans-serif;
+        text-align: center;
+        line-height: 0.8;
+        font-size: 12em;
+        font-weight: lighter;
+    }
+    
+}
+
+
+@media (min-width: 1900px) and (max-width: 2060px) {
+    .hero-info > p {
+        font-size: 1.15em;
+    }
+    
 }

@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeroesListComponent } from './heroes-list/heroes-list.component';
 import { HeroesDetailComponent } from './heroes-detail/heroes-detail.component';
 import { HomeScreenComponent } from './home-screen/home-screen.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
     HeroesComponent,
     HeroesListComponent,
     HeroesDetailComponent,
-    HomeScreenComponent
+    HomeScreenComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

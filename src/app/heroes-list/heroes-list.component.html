@@ -1,33 +1,37 @@
-<div class="row-container">
-  <div class="row-item">
+<div class="container">
+  <app-navbar></app-navbar>
 
-    <h1 class="title"><span>Avengers</span>, assemble!</h1>
+  <div class="row-container">
+    <div class="row-item">
 
-    <p>
-      Uma equipe de indivíduos extraordinários, com habilidades especiais e a vontade de fazer o bem acima de tudo.
-    </p>
+      <h1 class="title"><span>Avengers</span>, assemble!</h1>
 
-    <p>
-      Conheça os heróis que juraram proteger o planeta e suas pessoas de ameaças domésticas e extraterrestre
-    </p>
+      <p>
+        Uma equipe de indivíduos extraordinários, com habilidades especiais e a vontade de fazer o bem acima de tudo.
+      </p>
 
-    <div class="arrow">
-      <span></span>
-      <span></span>
-      <span></span>
+      <p>
+        Conheça os heróis que juraram proteger o planeta e suas pessoas de ameaças domésticas e extraterrestre
+      </p>
+
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
     </div>
-
+    <div class="row-item row-item-right">
+      <img src="./../../assets/img/avengers-assemble.png" alt="Avengers, assemble!">
+    </div>
   </div>
-  <div class="row-item row-item-right">
-    <img src="./../../assets/img/avengers-assemble.png" alt="Avengers, assemble!">
-  </div>
-</div>
 
-<div *ngFor="let hero of heroes">
-  <div class="hero-info">
-    <h2 routerLink="/heroes/{{hero.id}}" [style.color]="hero.mainColor">{{hero.name}}</h2>
-    <p>
-      {{hero.description}}
-    </p>
+  <div *ngFor="let hero of heroes">
+    <div class="hero-info">
+      <h2 routerLink="/hero/{{hero.id}}" [style.color]="hero.mainColor">{{hero.name}}</h2>
+      <p>
+        {{hero.description}}
+      </p>
+    </div>
   </div>
 </div>

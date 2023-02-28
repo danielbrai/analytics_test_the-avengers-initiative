@@ -1,0 +1,81 @@
+.row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 1vh;
+}
+
+.row-item {
+    margin: 1vh 1vw;
+    flex-grow: 2
+}
+
+.menu-container {
+    text-align: right;
+}
+
+.logo-container {
+    text-align: left;
+    cursor: pointer;
+}
+
+.logo {
+    max-width: 2vw;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu-item {
+    display: inline;
+    cursor: none;
+}
+
+.menu-item>a {
+    padding: 1vw;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgrey;
+    cursor: pointer;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(79, 79, 79);
+    min-width: 12vw;
+    overflow: visible;
+    padding: 1vh 1vw;
+    z-index: 1;
+    right: 0px;
+}
+
+.dropdown-content a {
+    padding: 3vh 1vw;
+    text-decoration: none;
+    display: block;
+    right: 0;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(223, 223, 223);
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+    font-size: 1em;
+    font-family: 'Heroes Assemble', Arial, Helvetica, sans-serif;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

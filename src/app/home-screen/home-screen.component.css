@@ -10,12 +10,16 @@
 .row-item {
     flex: 1;
     text-align: center;
-    max-height: 100vh;
 }
 
 .wrap-image>img {
-    height: 85%;
-    width: 85%;
+    display: block;
+    margin-top: 2vh;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 
 .title {
@@ -66,5 +70,20 @@
 
 .cover {
     margin: auto;
-    display:block;
+    display: block;
+}
+
+
+@media (min-width: 1900px) {
+
+    .wrap-image {
+        height: 100vh;
+    }
+
+
+    .wrap-image>img {
+        height: 95%;
+        width: 95%;
+    }
+
 }

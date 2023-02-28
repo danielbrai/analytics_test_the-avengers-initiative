@@ -1,0 +1,21 @@
+<section class="row-container">
+  <div class="row-item logo-container">
+    <img (click)="navigateToHome()" class="logo" src="./../../assets/img/avengers-logo.png" alt="Avengers Logo">
+  </div>
+  <nav class="row-item menu-container">
+    <ul class="menu">
+      <li class="menu-item">
+        <a routerLink="">Home</a>
+      </li>
+      <li class="menu-item">
+        <a (click)="navigateToHeroList()">Sobre</a>
+      </li>
+      <li class="menu-item dropdown">
+        <a href="#">Heróis</a>
+        <div class="dropdown-content">
+          <a *ngFor="let hero of heroes" (click)="navigateToHero(hero.id)" >{{hero.name}}</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</section>
